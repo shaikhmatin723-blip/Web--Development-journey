@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout in css</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+    nav{
+        background-color: rgb(230, 159, 230);
+        padding: 12px;
+        overflow-y: auto;
+        
+    }
+    ol li{
+        font-weight: 100;
+        display: inline flex;
+        padding: 10 px;
+        margin: 12px;
+        background-color: rgb(230, 159, 230);
+
+    }
+    li{
+      background-color: rgb(230, 159, 230);
+    }
+    
+    .container{
+        display: flex;
+        position:absolute;
+        gap: 20px;
+        top: 80px;
+        left: 180px;
+        right: 180px;
+        flex-direction: column row;
+    }
+     .box1{
+        background-color: aqua;
+        height: 300px;
+        width: 300px; 
+        padding-left: 120px;
+        border-radius: 20px;
+   } 
+    .box2{
+    height: 300px;
+    width: 300px; 
+    padding-left: 120px;
+    background-color: brown;
+    border-radius: 15px;
+
+    }
+    body{
+        background-color: cadetblue;
+    }
+    
+        
+
+   
+</style>
+<body>
+    
+    <head>
+        <nav>
+            <ol>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+        </nav>
+    </head>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    
+    
+</body>
+</html>
