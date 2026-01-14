@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baouncing animation</title>
+    <style>
+        .box{
+            width: 121px;
+            height: 121px;
+            background-color: blue;
+            position: absolute;
+            border-radius: 70px;
+            bottom: 0;
+            top: 0;
+            animation: animationx 3s linear infinite,animationy 1s ease-in-out infinite alternate ;
+        }
+        .container{
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: red;
+        }
+          @keyframes animationx{
+            form{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+          }
+          @keyframes animationy{
+            form{
+                right: 0%;
+
+            }
+            to{
+                right: 100%;
+            }
+
+          } 
+            
+          
+    
+    </style></head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>
